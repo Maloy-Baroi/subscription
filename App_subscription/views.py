@@ -73,8 +73,7 @@ class SubscriptionCancel(generics.DestroyAPIView):
         customer.cancel_subscription()
         instance.delete()
 
-
-
+# Admin Withdraw
 def withdraw_money(request, pk):
     # Get the subscriber from the database
     subscriber = get_object_or_404(Subscriber, pk=pk)
