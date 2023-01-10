@@ -7,7 +7,8 @@ urlpatterns = [
     path('subscribers/', views.SubscriberList.as_view(), name='subscriber-list'),
     path('subscribers/<int:pk>/', views.SubscriberDetail.as_view(), name='subscriber-detail'),
     path('purchase-payment/', views.SubscriptionPurchase.as_view(), name='payment'),
-    path('purchase-cancel/', views.SubscriptionCancel.as_view(), name='payment'),
+    path('purchase-cancel/', views.SubscriptionCancel.as_view(), name='payment-cancel'),
+    path('withdraw-cash/', views.SubscriberWithdraw.as_view(), name='withdraw'),
 ]
 
 # /subscription-plans/: List of subscription plans
